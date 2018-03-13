@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedTable" max_length="40" name="x_58872_needit_needtable" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="ca" label="Requested Type" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element label="hr" sequence="0" value="hr"/>
+                <element label="ca" sequence="1" value="ca"/>
+                <element label="it" sequence="2" value="it"/>
+            </choice>
+        </element>
+        <element label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_3" reference="sys_user" type="reference"/>
+    </element>
+</database>
